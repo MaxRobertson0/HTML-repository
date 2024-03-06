@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <div id = 'top_box'>
+        Texas Obesity
+    </div>
+
+        <div class = 'container'>
+        <!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="https://www.dallasfed.org/-/media/Images/components/local-economy/hou/hou-landing.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,h_1080,q_50,w_1920/v1/clients/houston/downtownskyline_dusk_2200x1458_fb275565-0b6b-482b-8d06-43c2cb3f03fd.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="https://m.psecn.photoshelter.com/img-get/I0000WxEUH3c1QV8/s/1200/I0000WxEUH3c1QV8.jpg" alt=""></div>
+
+
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+</div>
+</div>
+<img style="float:left" src="pie_chart\HoustonPie.png" id="pieChart">    
+<p id="pieText"> As we can see, nearly a <strong>THIRD</strong> of the Hosuton population is classified as obese.<br>
+                This is an extremely high proportion of people as, for comparison, the obesity<br> rate in france is 17%.
+                This high rate is caused by many factors which we will see throughout this web page.
+                many of the factors are shared between all of the cities<br> on the map as they share many flaws
+                in their construction, social circumstances, <br>and general mindset of the population towardshow they live</p>
+<br>
+<br>
+<br>
+<br>
+
+    
+</body>
+
+
+
+
+
+
+
+<style>
+    body{
+        background-color: rgb(14, 14, 70);
+    }
+    #top_box{
+        text-align: center;
+        height: 50px;
+        width: 100%;
+        background-color: rgb(185, 124, 11);
+        font-size: 30px;
+        font-family: "PT Sans", Calibri, Tahoma, sans-serif;
+    }
+    #pieChart{
+        position: relative;
+        max-width: 30%;
+        max-height: 30%;
+        top: 50px;
+        left: 75px;
+    }
+    #pieText{
+        font-size: 30px;
+        color: rgb(185, 124, 11) ;
+        position: relative;
+        top: 40px;
+        left: 80px;
+    }
+    .container{
+    width: 100%;
+    height: 140vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .swiper{
+    width: 80%;
+    height: fit-content;
+    }
+    .swiper-slide img{
+    width: 100%;
+    }
+    .swiper .swiper-button-prev, .swiper .swiper-button-next{
+    color: white;
+    }
+
+.swiper .swiper-pagination-bullet-active{
+    background: white;
+    }
+</style>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  loop: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+
+});
+</script>
+</html>
